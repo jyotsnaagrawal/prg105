@@ -18,7 +18,7 @@ while bottles > 2:
     print(str(bottles - 1) + "bottle of beer on the wall\n")
     bottles = bottles - 1
 
-    print(f"{bottles} bottle of beer on the wall")
+   
 
 
 
