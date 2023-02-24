@@ -5,17 +5,17 @@
 def main():
     count = 0
     total = 0.0
-    data_file = open("data.txt", "r")
+    sales_file = open("sales_totals.txt", "r")
 
-    line = data_file.readline()
+    line = sales_file.readline()
     while line != "":
         value =float(line)
         print(f"{value:,.2f}")
         total += value
         count += 1
-        line = data_file.readline()
+        line = sales_file.readline()
 
-    data_file.close()
+    sales_file.close()
     average = total/count
     print(f"\n\nTotal..........{total}")
     print(f"Number of entries........{count}")
