@@ -2,7 +2,7 @@ def main():
     total = 0.0
     count = 0
     print("This program will total and average number in your data file. ")
-    file_name = input("Enter the name of your datafile: ")
+    file_name = input("Enter the name of your data file: ")
 
     try:
         sales_file = open(file_name, "r")
