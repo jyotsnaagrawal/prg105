@@ -15,7 +15,7 @@ def main():
                 total += value
                 count += 1
             except ValueError:
-                print(f'Line {count+1} with a value of {line} was invalid.')
+                print(f'Line {count + 1} with a value of {line} was invalid.')
 
             line = sales_file.readline()
 
@@ -23,7 +23,6 @@ def main():
 
     except IOError:
         print(f'Unable to access the file: {file_name}.')
-        quit()
 
     average = total / count
     print(f"\nTotal:.........{total:,.2f}")
