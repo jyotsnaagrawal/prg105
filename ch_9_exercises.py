@@ -46,7 +46,7 @@ print("=" * 10, "Section 9.2 sets", "=" * 10)
 # 1) Create an empty set named my_set
 my_set = ()
 # 2) Create a set named days that contains the names of the days of the week
-days = (["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 # 3) Get the number of elements from the days set and print it
 print(len(days))
 # 4) Remove Saturday and Sunday from the days set
