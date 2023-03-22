@@ -7,7 +7,7 @@ def main():
     total = 10
     grade = 0
     for key in keys:
-        answer = input(f"Please enter the number of steps taken on {key} :")
+        answer = input(f"What is the equivalent of {key} :")
         if answer.lower() == numbers_dict[key].lower():
 
             print("Correct")
