@@ -30,8 +30,8 @@ class Coin:  # note class names are capitalized
 
 def main():
     # TODO change my_coin to my_dice, my_dice_two and the appropriate class name throughout main
-    my_dice = Coin()
-    my_dice_two = Coin()
+    my_dice = Dice()
+    my_dice_two = Dice()
     print('This side is up, ', my_dice.get_side_up())
     print('This side is up, ', my_dice_two.get_side_up())
     
