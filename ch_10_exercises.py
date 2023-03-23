@@ -13,7 +13,7 @@ print("=" * 10, "Section 10.2 Coin class to Dice class", "=" * 10)
 # modify the Coin class as indicated
 
 
-class Coin:  # note class names are capitalized
+class Dice:  # note class names are capitalized
     def __init__(self):
         # TODO initialize side_up to 1 (use the integer value)
         self.side_up = 1
