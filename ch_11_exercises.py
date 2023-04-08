@@ -6,7 +6,7 @@
     Your file should compile error free (green checkmark upper right)
     Submit your completed file
 """
-import animals
+
 # TODO 11.1 Introduction to Inheritance
 print("=" * 10, "Section 11.1 inheritance", "=" * 10)
 
@@ -136,9 +136,9 @@ class Cat(Mammal):
 
 
 def main2():
-    mammal = animals.Mammal('regular animal')
-    dog = animals.Dog()
-    cat = animals.Cat()
+    mammal = Mammal('regular animal')
+    dog = Dog()
+    cat = Cat()
     print('Here are some animals and')
     print('the sounds they make')
     print('-----------------------')
