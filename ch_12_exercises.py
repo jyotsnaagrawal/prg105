@@ -38,18 +38,16 @@ print("=" * 10, "Section 12.2-12.3 problem solving with recursion", "=" * 10)
 # The recursion should end when all items have been removed from the list.
 # 2) Call the function using the numbers list as a parameter
 
+def recursive_sum(list_number):
+    if len(list_number) == 1:
+        return list_number[0]
+    else:
+        return list_number[0] + recursive_sum(list_number[1:])
+
+
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-
-
-def calculate_sum(nums):
-    total_sum = 0
-    for number in nums:
-        total_sum += number
-    return total_sum
-
-
-result = calculate_sum(numbers)
-print("The sum of the numbers is:", result)
+result = recursive_sum(numbers)
+print(result)
 
 
 
