@@ -13,20 +13,18 @@ print("=" * 10, "Section 12.1 simple recursion", "=" * 10)
 #    The function should print "Hooray!" the number of times requested
 #    by the parameter times_requested
 
-
-def main():
-    value(5)
+    
+def hooray(times):
+    if times > 1:
+        hooray(times - 1)
+    print("Hooray!")
 
 # 2) Call the function with a parameter value of 5.
+hooray(5)
 
 
-def value(times):
-    if times > 0:
-        print("Hooray!")
-        value(times - 1)
 
 
-main()
 # TODO 12.2-12.3 problem solving with recursion
 
 
