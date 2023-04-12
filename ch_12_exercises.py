@@ -13,17 +13,16 @@ print("=" * 10, "Section 12.1 simple recursion", "=" * 10)
 #    The function should print "Hooray!" the number of times requested
 #    by the parameter times_requested
 
-    
+
 def hooray(times):
     if times > 1:
         hooray(times - 1)
     print("Hooray!")
 
 # 2) Call the function with a parameter value of 5.
+
+
 hooray(5)
-
-
-
 
 # TODO 12.2-12.3 problem solving with recursion
 
@@ -36,6 +35,7 @@ print("=" * 10, "Section 12.2-12.3 problem solving with recursion", "=" * 10)
 # The recursion should end when all items have been removed from the list.
 # 2) Call the function using the numbers list as a parameter
 
+
 def recursive_sum(list_number):
     if len(list_number) == 1:
         return list_number[0]
@@ -46,7 +46,6 @@ def recursive_sum(list_number):
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 result = recursive_sum(numbers)
 print(result)
-
 
 
 
