@@ -2,8 +2,8 @@ from office_furniture import OfficeFurniture
 
 
 class Desk(OfficeFurniture):
-    def __init__(self, category, material, length, width, height, price, location_of_drawers, number_drawers):
-        OfficeFurniture.__init__(self, category, material, length, width, height, price)
+    def __init__(self, material, length, width, height, price, location_of_drawers, number_drawers):
+        OfficeFurniture.__init__(self, "Desk", material, length, width, height, price)
 
         self.__location_of_drawers = location_of_drawers
         self.__number_drawers = number_drawers
