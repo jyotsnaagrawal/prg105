@@ -123,7 +123,6 @@ class Converter:
         self.convert_button.pack(side="left")
         self.quit_button = tkinter.Button(self.bottom_frame, text="QUIT", command=self.main_window.destroy)
         self.quit_button.pack(side="left")
-        self.convert_button.pack(side= "left")
 
         self.top_frame.pack()
         self.bottom_frame.pack()
