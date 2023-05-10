@@ -1,69 +1,54 @@
-class PersonData:
-    def __init__(self):
-        self.phone = None
-        self.address = None
-        self.age = None
-        self.name = None
+class Person:
 
-    def __int__(self, name, age, address, phone):
-        self.name = name
-        self.age = age
-        self.address = address
-        self.phone = phone
+    def __init__(self, name, age, address, phone):
+        self.__name = name
+        self.__age = age
+        self.__address = address
+        self.__phone = phone
 
     # def __get__(self, instance, owner):
 
     def get_name(self):
-        return self.name
+        return self.__name
 
     def get_age(self):
-        return self.age
+        return self.__age
 
     def get_address(self):
-        return self.address
+        return self.__address
 
     def get_phone(self):
-        return self.phone
+        return self.__phone
 
     def set_name(self, name):
-        self.name = name
+        self.__name = name
 
     def set_age(self, age):
-        self.age = age
+        self.__age = age
 
     def set_address(self, address):
-        self.address = address
+        self.__address = address
 
     def set_phone(self, phone):
-        self.phone = phone
+        self.__phone = phone
 
     def print(self):
         print(f'{self.name}, age {self.age}')
         print(self.address)
         print(self.phone + '\n')
 
-
-def my_information():
-    my_personal_information = PersonData()
-    my_personal_information.set_name("Meri")
-    my_personal_information.set_age(47)
-    my_personal_information.set_address("8900 Route 14")
-    my_personal_information.set_phone("123-456-7890")
-    my_personal_information.print()
-
-    my_friend_information = PersonData()
-    my_friend_information.set_name("Mickey Mouse ")
-    my_friend_information.set_age(93)
-    my_friend_information.set_address("Anaheim, CA")
-    my_friend_information.set_phone("800-123-4567")
-    my_friend_information.print()
-
-    my_family_information = PersonData()
-    my_family_information.set_name("Donald Duck ")
-    my_family_information.set_age(86)
-    my_family_information.set_address("Anaheim, CA")
-    my_family_information.set_phone("800-333-3333")
-    my_family_information.print()
+    def __str__(self):
+        return "Name: " + self.__name + "\nAddress " + self.__address + "\nAge " + self.__age + "\nPhone "\
+            + self.__phone
 
 
-my_information()
+def main():
+    person1 = Person("Ram", "567 Treeline Dr, Crystal Lke", "35", "224-567-789\n")
+    person2 = Person("Poonam", "768 Treeline Dr, Crystal Lke", "35", "224-567-789\n")
+    person3 = Person("Geeta", "234 Treeline Dr, Crystal Lke", "35", "224-567-789")
+    print(person1)
+    print(person2)
+    print(person3)
+
+
+main()
